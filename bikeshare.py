@@ -193,7 +193,7 @@ def main():
         row_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        while restart != 'yes' or restart != 'no':
+        while restart != 'yes' and restart != 'no':
             restart = input('\nPlease enter yes or no.\n')
         if restart.lower() != 'yes':
             break
