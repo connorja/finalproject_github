@@ -170,9 +170,11 @@ def row_data(df):
         """Check for the end of the dataframe."""
         if end >= length :
             end = length
+            pd.set_option('display.max_columns',20)
             print(df[start:end])
             print('\nThis is the end of the data.')
-            break    
+            break  
+        pd.set_option('display.max_columns',20)    
         print(df[start:end])
         #print(length)
         #print(df.tail())
@@ -191,6 +193,8 @@ def main():
         row_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
+        while restart != 'yes' or restart != 'no':
+            restart = input('\nPlease enter yes or no.\n')
         if restart.lower() != 'yes':
             break
         """ need to add a loop to request a valid imput."""
