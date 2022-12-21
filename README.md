@@ -7,10 +7,15 @@ The project was forked and created on 12/21/2022.
 finalproject_github
 
 ### Description
-Describe what your project is about and what it does
+Exercise in working with Github using the previous python project but ignoring the supporting data sources.
 
 ### Files used
-Include the files used
+bikeshare.py 
+ignored the following
+	chicago.csv
+	new_york_city.csv
+	washington.csv
+
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
